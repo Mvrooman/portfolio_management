@@ -4,6 +4,7 @@ gem 'rails', '3.1.0'
 gem 'jquery-rails'
 gem 'yahoofinance'
 gem 'pg'
+gem 'uglifier'
 
 
 group :development do
