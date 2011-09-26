@@ -7,6 +7,10 @@ gem 'pg'
 gem 'uglifier'
 
 
+group :production do
+  gem 'therubyracer'
+end
+
 group :development do
   gem 'rspec-rails', '2.6.1'
   gem 'annotate'
