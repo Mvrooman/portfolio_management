@@ -1,0 +1,11 @@
+<%= render 'portfolios/portfolio_add' %>
+<ul class="portfolios">
+  </br>
+  <div id="portfolios">
+    <%= render :partial => 'portfolios/portfolio', :collection => @portfolios, :as => :portfolio %>
+  </div>
+</ul>
+<h1 id="net_value">Net Value: $<%=totalValue%></h1>
+
+
+

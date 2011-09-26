@@ -1,0 +1,28 @@
+<%= div_for portfolio do %>
+    <li class="portfolio">
+      <%= portfolio.name %>
+      <%= link_to "[Delete]", portfolio, :method => :delete, :class => "delete", :remote =>true, :confirm => "Delete #{portfolio.name}?",
+                  :title => "Delete #{portfolio.name}" %>
+      <div id=portfolio_table_<%= portfolio.id %>>
+        <table>
+          <tr>
+            <td><span>Symbol</span></td>
+            <td><span>Name</span></td>
+            <td><span>Amount</span></td>
+            <td><span>Price</span></td>
+            <td><span>Value</span></td>
+            <td>Action</td>
+          </tr>
+          <%= render portfolio.holdings %>
+          <tr>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td colspan="2" align="right">Account Value:</td>
+            <td><span>$<%= portfolio.portfolioValue %></span></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <%= render :partial => 'holdings/holding_add', :locals => {:portfolio => portfolio} %>
+    </li>
+<% end %>

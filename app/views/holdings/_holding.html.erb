@@ -1,0 +1,12 @@
+<%= div_for holding do %>
+    <tr>
+      <td><span><%= holding.stock.symbol %></span></td>
+      <td><span><%= holding.stock.name %></span></td>
+      <td><span><%= holding.amount %></span></td>
+      <td ><span>$<%= holding.stock.price %></span></td>
+      <td ><span>$<%= holding.value %></span></td>
+      <td>
+        <%= link_to "[Delete]", holding, :method => :delete, :remote =>true, :confirm => "Delete #{holding.stock.name}?",
+                    :title => "Delete #{holding.stock.name}" %></td>
+    </tr>
+<% end %>

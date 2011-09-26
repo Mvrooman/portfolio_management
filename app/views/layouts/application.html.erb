@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <%= csrf_meta_tag %>
+  <%= render 'layouts/stylesheets' %>
+
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" %>
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js" %>
+  <%= javascript_include_tag "jquery-rails.js" %>
+</head>
+<body>
+<div class="container">
+  <%= render 'layouts/header' %>
+  <section class="round">
+    <div id="flashnow"></div>
+    <%= yield %>
+  </section>
+  <%= render 'layouts/footer' %>
+</div>
+</body>
+</html>

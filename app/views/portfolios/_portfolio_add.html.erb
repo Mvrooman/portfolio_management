@@ -1,0 +1,12 @@
+<%= form_for @new_portfolio, :remote =>true do |f| %>
+    <%= render 'shared/error_messages', :object => f.object %>
+    <div class="field">
+      <%= f.label 'Add New Portfolio' %>
+      <%= f.text_field :name %>
+      <%= f.submit "Add" %>
+    </div>
+<% end %>
+
+
+
+

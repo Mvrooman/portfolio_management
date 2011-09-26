@@ -1,0 +1,11 @@
+<%= form_for @new_holding, :remote =>true do |f| %>
+    <%= render 'shared/error_messages', :object => f.object %>
+    <div class="field">
+      <%= f.label 'Symbol' %>
+      <%= text_field_tag 'symbol', '', :size =>7 %>
+      <%= f.label 'Amount' %>
+      <%= f.text_field :amount, :size =>7 %>
+      <%= hidden_field_tag 'portfolio_id', portfolio.id %>
+      <%= f.submit "Add" %>
+    </div>
+<% end %>
