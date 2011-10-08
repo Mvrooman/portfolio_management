@@ -8,7 +8,7 @@ gem 'uglifier'
 
 
 group :production do
-  gem 'therubyracer'
+  #gem 'therubyracer' #needed for heroku
 end
 
 group :development do

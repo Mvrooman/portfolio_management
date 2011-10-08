@@ -100,3 +100,206 @@ tialize'
 2011-09-26T04:36:12+00:00 heroku[web.1]: Process exited
 2011-09-26T04:36:13+00:00 heroku[web.1]: State changed from starting to crashed
 2011-09-26T04:36:21+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:21:36:21 -0700] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" stormy-samurai-8149.heroku.com
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered shared/_error_messages.html.erb (0.0ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered holdings/_holding_add.html.erb (1.4ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered collection (0.0ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered shared/_error_messages.html.erb (0.0ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered holdings/_holding_add.html.erb (1.9ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered portfolios/_portfolio.html.erb (104.4ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered pages/home.html.erb within layouts/application (117.5ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered layouts/_stylesheets.html.erb (0.8ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered layouts/_header.html.erb (0.2ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered layouts/_footer.html.erb (0.1ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Completed 200 OK in 384ms (Views: 64.2ms | ActiveRecord: 203.6ms)
+2011-09-26T05:39:37+00:00 app[web.1]: cache: [GET /] miss
+2011-09-26T05:39:37+00:00 heroku[router]: GET superportfolio.heroku.com/ dyno=web.1 queue=0 wait=0ms service=395ms status=200 bytes=22502
+2011-09-26T05:39:37+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:39:37 -0700] "GET / HTTP/1.1" 200 3127 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:39:38+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:39:38 -0700] "GET /assets/blueprint/screen-ae0855c74c7014a7ab2aedb270c7a977.css HTTP/1.1" 304 0 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:39:38+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:39:38 -0700] "GET /assets/custom-359baea12b232409ccd4160cbf277604.css HTTP/1.1" 304 0 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:39:38+00:00 app[web.1]: cache: [GET /assets/jquery-rails-8495e52225405c0b6c5e7e4db19c4f86.js] fresh
+2011-09-26T05:39:38+00:00 heroku[router]: GET superportfolio.heroku.com/assets/jquery-rails-8495e52225405c0b6c5e7e4db19c4f86.js dyno=web.1 queue=0 wait=0ms service=7ms status=200 bytes=1918
+2011-09-26T05:39:38+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:39:38 -0700] "GET /assets/jquery-rails-8495e52225405c0b6c5e7e4db19c4f86.js HTTP/1.1" 304 0 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:39:45+00:00 app[web.1]: 
+2011-09-26T05:39:45+00:00 app[web.1]: 
+2011-09-26T05:39:45+00:00 app[web.1]: Started POST "/portfolios" for 174.52.35.120 at 2011-09-25 22:39:45 -0700
+2011-09-26T05:39:45+00:00 app[web.1]:   Processing by PortfoliosController#create as JS
+2011-09-26T05:39:45+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"eJUW2VnTG570xHcAwrsatP0pzQt7QQnYzOb75VF9zuU=", "portfolio"=>{"name"=>"a"}}
+2011-09-26T05:39:45+00:00 app[web.1]: Rendered colle
+ction (0.0ms)
+2011-09-26T05:39:45+00:00 app[web.1]: Rendered shared/_error_messages.html.erb (0.0ms)
+2011-09-26T05:39:45+00:00 app[web.1]: Rendered holdings/_holding_add.html.erb (1.5ms)
+2011-09-26T05:39:45+00:00 app[web.1]: Rendered portfolios/_portfolio.html.erb (3.7ms)
+2011-09-26T05:39:45+00:00 app[web.1]: Rendered portfolios/create.js.erb within layouts/application (4.2ms)
+2011-09-26T05:39:45+00:00 heroku[router]: POST superportfolio.heroku.com/portfolios dyno=web.1 queue=0 wait=0ms service=89ms status=200 bytes=1897
+2011-09-26T05:39:45+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:39:45 -0700] "POST /portfolios HTTP/1.1" 200 717 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:39:45+00:00 app[web.1]: Completed 200 OK in 82ms (Views: 16.6ms | ActiveRecord: 64.2ms)
+2011-09-26T05:39:45+00:00 app[web.1]: cache: [POST /portfolios] invalidate, pass
+2011-09-26T05:40:01+00:00 app[web.1]: 
+2011-09-26T05:40:01+00:00 app[web.1]: 
+2011-09-26T05:40:01+00:00 app[web.1]: Started POST "/portfolios" for 174.52.35.120 at 2011-09-25 22:40:01 -0700
+2011-09-26T05:40:01+00:00 app[web.1]:   Processing by PortfoliosController#create as JS
+2011-09-26T05:40:01+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"eJUW2VnTG570xHcAwrsatP0pzQt7QQnYzOb75VF9zuU=", "portfolio"=>{"name"=>"234234234234"}}
+2011-09-26T05:40:01+00:00 app[web.1]: Rendered collection (0.0ms)
+2011-09-26T05:40:01+00:00 app[web.1]: Rendered shared/_error_messages.html.erb (0.0ms)
+2011-09-26T05:40:01+00:00 app[web.1]: Rendered holdings/_holding_add.html.erb (1.4ms)
+2011-09-26T05:40:01+00:00 app[web.1]: Rendered portfolios/_portfolio.html.erb (3.9ms)
+2011-09-26T05:40:01+00:00 app[web.1]: Rendered portfolios/create.js.erb within layouts/application (4.3ms)
+2011-09-26T05:40:01+00:00 heroku[router]: POST superportfolio.heroku.com/portfolios dyno=web.1 queue=0 wait=0ms service=105ms status=200 bytes=1941
+2011-09-26T05:40:01+00:00 app[web.1]: Completed 200 OK in 98ms (Views: 15.5ms | ActiveRecord: 81.6ms)
+2011-09-26T05:40:01+00:00 app[web.1]: cache: [POST /portfolios] invalidate, pass
+2011-09-26T05:40:01+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:01 -0700] "POST /portfolios HTTP/1.1" 200 775 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:05+00:00 app[web.1]: 
+2011-09-26T05:40:05+00:00 app[web.1]: 
+2011-09-26T05:40:05+00:00 app[web.1]: Started DELETE "/portfolios/6" for 174.52.35.120 at 2011-09-25 22:40:05 -0700
+2011-09-26T05:40:05+00:00 app[web.1]:   Processing by PortfoliosController#destroy as JS
+2011-09-26T05:40:05+00:00 app[web.1]:   Parameters: {"id"=>"6"}
+2011-09-26T05:40:05+00:00 app[web.1]: Rendered portfolios/destroy.js.erb within layouts/application (0.
+3ms)
+2011-09-26T05:40:05+00:00 app[web.1]: Completed 200 OK in 78ms (Views: 14.2ms | ActiveRecord: 61.9ms)
+2011-09-26T05:40:05+00:00 app[web.1]: cache: [DELETE /portfolios/6] invalidate, pass
+2011-09-26T05:40:05+00:00 heroku[router]: DELETE superportfolio.heroku.com/portfolios/6 dyno=web.1 queue=0 wait=0ms service=81ms status=200 bytes=170
+2011-09-26T05:40:05+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:05 -0700] "DELETE /portfolios/6 HTTP/1.1" 200 174 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:07+00:00 app[web.1]: 
+2011-09-26T05:40:07+00:00 app[web.1]: 
+2011-09-26T05:40:07+00:00 app[web.1]: Started DELETE "/portfolios/4" for 174.52.35.120 at 2011-09-25 22:40:07 -0700
+2011-09-26T05:40:07+00:00 app[web.1]:   Processing by PortfoliosController#destroy as JS
+2011-09-26T05:40:07+00:00 app[web.1]:   Parameters: {"id"=>"4"}
+2011-09-26T05:40:07+00:00 app[web.1]: Rendered portfolios/destroy.js.erb within layouts/application (0.0ms)
+2011-09-26T05:40:07+00:00 heroku[router]: DELETE superportfolio.heroku.com/portfolios/4 dyno=web.1 queue=0 wait=0ms service=59ms status=200 bytes=250
+2011-09-26T05:40:07+00:00 app[web.1]: Completed 200 OK in 51ms (Views: 18.8ms | ActiveRecord: 29.8ms)
+2011-09-26T05:40:07+00:00 app[web.1]: cache: [DELETE /portfolios/4] invalidate, pass
+2011-09-26T05:40:07+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:07 -0700] "DELETE /portfolios/4 HTTP/1.1" 200 193 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:21+00:00 app[web.1]: 
+2011-09-26T05:40:21+00:00 app[web.1]: 
+2011-09-26T05:40:21+00:00 app[web.1]: Started GET "/" for 174.52.35.120 at 2011-09-25 22:40:21 -0700
+2011-09-26T05:40:21+00:00 app[web.1]:   Processing by PagesController#home as HTML
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered shared/_error_messages.html.erb (0.0ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered portfolios/_portfolio_add.html.erb (1.5ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered holdings/_holding.html.erb (9.0ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered shared/_error_messages.html.erb (0.0ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered holdings/_holding_add.html.erb (1.2ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered holdings/_holding.html.erb (7.1ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered shared/_error_messages.html.erb (0.0ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered holdings/_holding_add.html.erb (1.2ms)
+2011-09-26T05:40:21+00:00 heroku[router]: GET superportfolio.heroku.com/ dyno=web.1 queue=0 wait=0ms service=484ms status=200 bytes=22229
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered pages/home.html.erb within layouts/application (87.0ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered layouts/_stylesheets.html.erb (1.0ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered layouts/_header.html.erb (0.2ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered layouts/_footer.html.erb (0.1ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Completed 200 OK in 475ms (Views: 51.8ms | ActiveRecord: 311.9ms)
+2011-09-26T05:40:21+00:00 app[web.1]: cache: [GET /] miss
+2011-09-26T05:40:21+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:21 -0700] "GET / HTTP/1.1" 200 3055 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:21+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:21 -0700] "GET /assets/blueprint/screen-ae0855c74c7014a7ab2aedb270c7a977.css HTTP/1.1" 304 0 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:21+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:21 -0700] "GET /assets/jquery-rails-8495e52225405c0b6c5e7e4db19c4f86.js HTTP/1.1" 304 0 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:21+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:21 -0700] "GET /assets/custom-359baea12b232409ccd4160cbf277604.css HTTP/1.1" 304 0 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefo
+x/7.0" superportfolio.heroku.com
+2011-09-26T05:40:27+00:00 app[web.1]: 
+2011-09-26T05:40:27+00:00 app[web.1]: 
+2011-09-26T05:40:27+00:00 app[web.1]: Started DELETE "/portfolios/5" for 174.52.35.120 at 2011-09-25 22:40:27 -0700
+2011-09-26T05:40:27+00:00 app[web.1]:   Processing by PortfoliosController#destroy as JS
+2011-09-26T05:40:27+00:00 app[web.1]:   Parameters: {"id"=>"5"}
+2011-09-26T05:40:27+00:00 app[web.1]: Rendered portfolios/destroy.js.erb within layouts/application (0.1ms)
+2011-09-26T05:40:27+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:27 -0700] "DELETE /portfolios/5 HTTP/1.1" 200 169 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:27+00:00 app[web.1]: Completed 200 OK in 87ms (Views: 11.4ms | ActiveRecord: 73.8ms)
+2011-09-26T05:40:27+00:00 app[web.1]: cache: [DELETE /portfolios/5] invalidate, pass
+2011-09-26T05:40:27+00:00 heroku[router]: DELETE superportfolio.heroku.com/portfolios/5 dyno=web.1 queue=0 wait=0ms service=91ms status=200 bytes=159
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered shared/_error_messages.html.erb (0.0ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered holdings/_holding_add.html.erb (1.4ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered collection (0.0ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered shared/_error_messages.html.erb (0.0ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered holdings/_holding_add.html.erb (1.9ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered portfolios/_portfolio.html.erb (104.4ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered pages/home.html.erb within layouts/application (117.5ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered layouts/_stylesheets.html.erb (0.8ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered layouts/_header.html.erb (0.2ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Rendered layouts/_footer.html.erb (0.1ms)
+2011-09-26T05:39:37+00:00 app[web.1]: Completed 200 OK in 384ms (Views: 64.2ms | ActiveRecord: 203.6ms)
+2011-09-26T05:39:37+00:00 app[web.1]: cache: [GET /] miss
+2011-09-26T05:39:37+00:00 heroku[router]: GET superportfolio.heroku.com/ dyno=web.1 queue=0 wait=0ms service=395ms status=200 bytes=22502
+2011-09-26T05:39:37+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:39:37 -0700] "GET / HTTP/1.1" 200 3127 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:39:38+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:39:38 -0700] "GET /assets/blueprint/screen-ae0855c74c7014a7ab2aedb270c7a977.css HTTP/1.1" 304 0 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:39:38+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:39:38 -0700] "GET /assets/custom-359baea12b232409ccd4160cbf277604.css HTTP/1.1" 304 0 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:39:38+00:00 app[web.1]: cache: [GET /assets/jquery-rails-8495e52225405c0b6c5e7e4db19c4f86.js] fresh
+2011-09-26T05:39:38+00:00 heroku[router]: GET superportfolio.heroku.com/assets/jquery-rails-8495e52225405c0b6c5e7e4db19c4f86.js dyno=web.1 queue=0 wait=0ms service=7ms status=200 bytes=1918
+2011-09-26T05:39:38+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:39:38 -0700] "GET /assets/jquery-rails-8495e52225405c0b6c5e7e4db19c4f86.js HTTP/1.1" 304 0 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:39:45+00:00 app[web.1]: 
+2011-09-26T05:39:45+00:00 app[web.1]: 
+2011-09-26T05:39:45+00:00 app[web.1]: Started POST "/portfolios" for 174.52.35.120 at 2011-09-25 22:39:45 -0700
+2011-09-26T05:39:45+00:00 app[web.1]:   Processing by PortfoliosController#create as JS
+2011-09-26T05:39:45+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"eJUW2VnTG570xHcAwrsatP0pzQt7QQnYzOb75VF9zuU=", "portfolio"=>{"name"=>"a"}}
+2011-09-26T05:39:45+00:00 app[web.1]: Rendered collection (0.0ms)
+2011-09-26T05:39:45+00:00 app[web.1]: Rendered shared/_error_messages.html.erb (0.0ms)
+2011-09-26T05:39:45+00:00 app[web.1]: Rendered holdings/_holding_add.html.erb (1.5ms)
+2011-09-26T05:39:45+00:00 app[web.1]: Rendered portfolios/_portfolio.html.erb (3.7ms)
+2011-09-26T05:39:45+00:00 app[web.1]: Rendered portfolios/create.js.erb within layouts/application (4.2ms)
+2011-09-26T05:39:45+00:00 heroku[router]: POST superportfolio.heroku.com/portfolios dyno=web.1 queue=0 wait=0ms service=89ms status=200 bytes=1897
+2011-09-26T05:39:45+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:39:45 -0700] "POST /portfolios HTTP/1.1" 200 717 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:39:45+00:00 app[web.1]: Completed 200 OK in 82ms (Views: 16.6ms | ActiveRecord: 64.2ms)
+2011-09-26T05:39:45+00:00 app[web.1]: cache: [POST /portfolios] invalidate, pass
+2011-09-26T05:40:01+00:00 app[web.1]: 
+2011-09-26T05:40:01+00:00 app[web.1]: 
+2011-09-26T05:40:01+00:00 app[web.1]: Started POST "/portfolios" for 174.52.35.120 at 2011-09-25 22:40:01 -0700
+2011-09-26T05:40:01+00:00 app[web.1]:   Processing by PortfoliosController#create as JS
+2011-09-26T05:40:01+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"eJUW2VnTG570xHcAwrsatP0pzQt7QQnYzOb75VF9zuU=", "portfolio"=>{"name"=>"234234234234"}}
+2011-09-26T05:40:01+00:00 app[web.1]: Rendered collection (0.0ms)
+2011-09-26T05:40:01+00:00 app[web.1]: Rendered shared/_error_messages.html.erb (0.0ms)
+2011-09-26T05:40:01+00:00 app[web.1]: Rendered holdings/_holding_add.html.erb (1.4ms)
+2011-09-26T05:40:01+00:00 app[web.1]: Rendered portfolios/_portfolio.html.erb (3.9ms)
+2011-09-26T05:40:01+00:00 app[web.1]: Rendered portfolios/create.js.erb within layouts/application (4.3ms)
+2011-09-26T05:40:01+00:00 heroku[router]: POST superportfolio.heroku.com/portfolios dyno=web.1 queue=0 wait=0ms service=105ms status=200 bytes=1941
+2011-09-26T05:40:01+00:00 app[web.1]: Completed 200 OK in 98ms (Views: 15.5ms | ActiveRecord: 81.6ms)
+2011-09-26T05:40:01+00:00 app[web.1]: cache: [POST /portfolios] invalidate, pass
+2011-09-26T05:40:01+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:01 -0700] "POST /portfolios HTTP/1.1" 200 775 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:05+00:00 app[web.1]: 
+2011-09-26T05:40:05+00:00 app[web.1]: 
+2011-09-26T05:40:05+00:00 app[web.1]: Started DELETE "/portfolios/6" for 174.52.35.120 at 2011-09-25 22:40:05 -0700
+2011-09-26T05:40:05+00:00 app[web.1]:   Processing by PortfoliosController#destroy as JS
+2011-09-26T05:40:05+00:00 app[web.1]:   Parameters: {"id"=>"6"}
+2011-09-26T05:40:05+00:00 app[web.1]: Rendered portfolios/destroy.js.erb within layouts/application (0.3ms)
+2011-09-26T05:40:05+00:00 app[web.1]: Completed 200 OK in 78ms (Views: 14.2ms | ActiveRecord: 61.9ms)
+2011-09-26T05:40:05+00:00 app[web.1]: cache: [DELETE /portfolios/6] invalidate, pass
+2011-09-26T05:40:05+00:00 heroku[router]: DELETE superportfolio.heroku.com/portfolios/6 dyno=web.1 queue=0 wait=0ms service=81ms status=200 bytes=170
+2011-09-26T05:40:05+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:05 -0700] "DELETE /portfolios/6 HTTP/1.1" 200 174 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:07+00:00 app[web.1]: 
+2011-09-26T05:40:07+00:00 app[web.1]: 
+2011-09-26T05:40:07+00:00 app[web.1]: Started DELETE "/portfolios/4" for 174.52.35.120 at 2011-09-25 22:40:07 -0700
+2011-09-26T05:40:07+00:00 app[web.1]:   Processing by PortfoliosController#destroy as JS
+2011-09-26T05:40:07+00:00 app[web.1]:   Parameters: {"id"=>"4"}
+2011-09-26T05:40:07+00:00 app[web.1]: Rendered portfolios/destroy.js.erb within layouts/application (0.0ms)
+2011-09-26T05:40:07+00:00 heroku[router]: DELETE superportfolio.heroku.com/portfolios/4 dyno=web.1 queue=0 wait=0ms service=59ms status=200 bytes=250
+2011-09-26T05:40:07+00:00 app[web.1]: Completed 200 OK in 51ms (Views: 18.8ms | ActiveRecord: 29.8ms)
+2011-09-26T05:40:07+00:00 app[web.1]: cache: [DELETE /portfolios/4] invalidate, pass
+2011-09-26T05:40:07+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:07 -0700] "DELETE /portfolios/4 HTTP/1.1" 200 193 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:21+00:00 app[web.1]: 
+2011-09-26T05:40:21+00:00 app[web.1]: 
+2011-09-26T05:40:21+00:00 app[web.1]: Started GET "/" for 174.52.35.120 at 2011-09-25 22:40:21 -0700
+2011-09-26T05:40:21+00:00 app[web.1]:   Processing by PagesController#home as HTML
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered shared/_error_messages.html.erb (0.0ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered portfolios/_portfolio_add.html.erb (1.5ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered holdings/_holding.html.erb (9.0ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered shared/_error_messages.html.erb (0.0ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered holdings/_holding_add.html.erb (1.2ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered holdings/_holding.html.erb (7.1ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered shared/_error_messages.html.erb (0.0ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered holdings/_holding_add.html.erb (1.2ms)
+2011-09-26T05:40:21+00:00 heroku[router]: GET superportfolio.heroku.com/ dyno=web.1 queue=0 wait=0ms service=484ms status=200 bytes=22229
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered pages/home.html.erb within layouts/application (87.0ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered layouts/_stylesheets.html.erb (1.0ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered layouts/_header.html.erb (0.2ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Rendered layouts/_footer.html.erb (0.1ms)
+2011-09-26T05:40:21+00:00 app[web.1]: Completed 200 OK in 475ms (Views: 51.8ms | ActiveRecord: 311.9ms)
+2011-09-26T05:40:21+00:00 app[web.1]: cache: [GET /] miss
+2011-09-26T05:40:21+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:21 -0700] "GET / HTTP/1.1" 200 3055 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:21+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:21 -0700] "GET /assets/blueprint/screen-ae0855c74c7014a7ab2aedb270c7a977.css HTTP/1.1" 304 0 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:21+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:21 -0700] "GET /assets/jquery-rails-8495e52225405c0b6c5e7e4db19c4f86.js HTTP/1.1" 304 0 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:21+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:21 -0700] "GET /assets/custom-359baea12b232409ccd4160cbf277604.css HTTP/1.1" 304 0 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:27+00:00 app[web.1]: 
+2011-09-26T05:40:27+00:00 app[web.1]: 
+2011-09-26T05:40:27+00:00 app[web.1]: Started DELETE "/portfolios/5" for 174.52.35.120 at 2011-09-25 22:40:27 -0700
+2011-09-26T05:40:27+00:00 app[web.1]:   Processing by PortfoliosController#destroy as JS
+2011-09-26T05:40:27+00:00 app[web.1]:   Parameters: {"id"=>"5"}
+2011-09-26T05:40:27+00:00 app[web.1]: Rendered portfolios/destroy.js.erb within layouts/application (0.1ms)
+2011-09-26T05:40:27+00:00 heroku[nginx]: 174.52.35.120 - - [25/Sep/2011:22:40:27 -0700] "DELETE /portfolios/5 HTTP/1.1" 200 169 "http://superportfolio.heroku.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0) Gecko/20100101 Firefox/7.0" superportfolio.heroku.com
+2011-09-26T05:40:27+00:00 app[web.1]: Completed 200 OK in 87ms (Views: 11.4ms | ActiveRecord: 73.8ms)
+2011-09-26T05:40:27+00:00 app[web.1]: cache: [DELETE /portfolios/5] invalidate, pass
+2011-09-26T05:40:27+00:00 heroku[router]: DELETE superportfolio.heroku.com/portfolios/5 dyno=web.1 queue=0 wait=0ms service=91ms status=200 bytes=159
